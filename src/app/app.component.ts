@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'VotingMachine';
+  agree = 0;
+  dis = 0;
+  developpers = ['Farhan', 'Tanvir', 'Sanjit', 'Sajib', 'Shiab'];
+  onVoted(isOk: boolean){
+    if(isOk == true)
+    {
+      this.agree++;
+    }
+    else
+    {
+      this.dis++;
+    }
+  }
 }
